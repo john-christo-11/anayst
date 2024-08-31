@@ -296,214 +296,81 @@
 
 	<!-- Portfolio Section
    ================================================== -->
-	<section id="portfolio">
+	
+<section id="portfolio">
+    <div class="row section-intro">
+        <div class="col-twelve">
+            <h2 style="color: #DC143C; font-size: 44px;">My Projects</h2>
+            <h2>Check out some of my key projects, where I applied my skills in data analysis, visualisation, and problem-solving.</h2>
+        </div>
+    </div> <!-- /section-intro-->
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+    <div class="row portfolio-content">
+        <div class="col-twelve">
+            <!-- portfolio-wrapper -->
+            <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+                <!-- Portfolio Item 1 -->
+                <div class="bgrid folio-item">
+                    <div class="item-wrap" style="position: relative;">
+                        <img src="images/portfolio/guestinme_app.jpeg" alt="GuestInMe Nightlife Application" 
+                             style="display: block; margin: 0 auto; width: 50%; max-width: 300px; height: auto;">
+                        <a href="#" class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); color: white; display: none; align-items: center; justify-content: center; text-align: center;">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">EduKits Android App</h3>
+                                    <span class="folio-types">Mobile App Development</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> <!-- /folio-item -->
 
-   			<h2 style="color: #DC143C; font-size: 44px;">My Projects</h2>
-   			<h2>Check out some of my key projects, where I applied my skills in data analysis, Visualisation, and problem-solving.</h2>
+                <!-- Portfolio Item 2 -->
+                <div class="bgrid folio-item">
+                    <div class="item-wrap" style="position: relative;">
+                        <img src="images/portfolio/portfolio_website.png" alt="Portfolio" 
+                             style="display: block; margin: 0 auto; width: 50%; max-width: 300px; height: auto;">
+                        <a href="#" class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); color: white; display: none; align-items: center; justify-content: center; text-align: center;">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">Portfolio</h3>
+                                    <span class="folio-types">Website Development</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> <!-- /folio-item -->
+            </div>
+        </div>
+    </div> <!-- /portfolio-content-->
+</section>
 
-   			
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+<script>
+    // Handle overlay display on hover and double click prevention
+    document.querySelectorAll('.item-wrap').forEach(function(itemWrap) {
+        var overlay = itemWrap.querySelector('.overlay');
+        
+        // Show the overlay on hover
+        itemWrap.addEventListener('mouseenter', function() {
+            overlay.style.display = 'flex'; // Show the overlay
+        });
+        
+        // Hide the overlay when not hovering
+        itemWrap.addEventListener('mouseleave', function() {
+            overlay.style.display = 'none'; // Hide the overlay
+        });
 
-   	<div class="row portfolio-content">
+        // Prevent default anchor click action and prevent background issues
+        overlay.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+        });
 
-   		<div class="col-twelve">
-
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-		
-		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/guestinme_app.jpeg" alt="GuestInMe Nightlife Application" style="display: block; margin: 0 auto; width: 50%; max-width: 300px; height: auto;">
-
-
-	                               		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">EduKits Android App</h3>	     					    
-                                    <span class="folio-types">
-                                        Mobile App Development
-                                    </span>		     		
-		     				</div> 	                      	
-	                     </div>                    
-	                  
-	               </div>
-	        </div> <!-- /folio-item -->
-             
-			        		 
-
-	        	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/portfolio_website.png" alt="Portfolio">
-	                            		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Portfolio</h3>	     					    
-		     			<span class="folio-types">
-		     				Website Development
-		     			</span>		     		
-		     		</div> 	                      	
-	                     </div>                    
-	                 
-	               </div>
-	        	</div> <!-- /folio-item -->
-
-	            <!-- modal popups - begin
-	            ============================================================= -->
-		<div id="modal-08" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-guestinme_app.png" alt="GuestInMe App" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>GuestInMe Nightlife App</h4>		      
-					      <p>GuestInMe Nightlife App made using Flutter and Firebase.</p>
-					      <div class="categories">Flutter App Development</div>			               
-					   </div>
-			         <div class="link-box">
-			            <a href="https://onelink.to/guestinme">App</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-08 -->
-                <div id="modal-07" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-showworld_app.png" alt="Show World Film Directory App" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Show World Film Directory App</h4>		      
-					      <p>Show World Film Directory App made using Flutter and Firebase.</p>
-					      <div class="categories">Flutter App Development</div>			               
-					   </div>
-			         <div class="link-box">
-			            <a href="https://play.google.com/store/apps/details?id=com.showworld.showworldfilmdirectory">App</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-07 -->
-
-                <div id="modal-06" class="popup-modal slider mfp-hide">
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-showworld_website.png" alt="Show World Film Directory Website" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Show World Website</h4>		      
-					      <p>Show World Film Directory Website made using HTML, CSS, JavaScript, PHP.</p>
-					      <div class="categories">Website Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://showworlddirectory.com">Visit</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-06 -->
-
-	            <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-hospipro.jpg" alt="HospiPro" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>HospiPro</h4>		      
-					      <p>Android App for Hospital management system. It was built under 24hrs for the KJSCE Hackathon - 2019. </p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/Team-Eureka04/Hospipro/tree/App">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				</div>
-			 <!-- /modal-05 -->
-
-		<div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-buttonpress.jpg" alt="Button Press" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Button Press</h4>		      
-					      <p>Android Application that helps generate Random numbers.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/ButtonPress">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-04 -->
-
-                <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-guestin.JPG" alt="GuestIn" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>GuestIn</h4>		      
-					      <p><strong>GuestIn</strong>, your one stop solution to get listed in the guestlist
-							of any Club or Bar all over <strong>Mumbai</strong>.</p>
-
-					      <div class="categories">Website Design</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/GuestIn">GitHub</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-03 -->
-
-                <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-snakegame.JPG" alt="Snake Game" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Snake Game</h4>		      
-					      <p>Classical Snake game on Java (one of my first Projects).</p>
-
-					      <div class="categories">Java Game Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/Snake-Game">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-02 -->
-
-                <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-portfolio_website.JPG" alt="Portfolio" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Portfolio</h4>		      
-					      <p>My Portfolio Website made using HTML, CSS, JavaScript, PHP.</p>
-
-					      <div class="categories">Website Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://alisolanki.gq">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-01 -->
+        // Prevent double click from changing the background
+        itemWrap.addEventListener('dblclick', function(event) {
+            event.stopPropagation(); // Prevent the double-click from affecting the whole page
+        });
+    });
+</script>
 
 
 				   <!-- modal popups - end
