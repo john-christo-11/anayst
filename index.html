@@ -382,15 +382,7 @@
             overlay.style.display = 'none'; // Hide the overlay
         });
 
-        // Prevent default anchor click action and prevent background issues
-        overlay.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-        });
-
-        // Prevent double click from changing the background
-        itemWrap.addEventListener('dblclick', function(event) {
-            event.stopPropagation(); // Prevent the double-click from affecting the whole page
-        });
+      
     });
 </script>
 
